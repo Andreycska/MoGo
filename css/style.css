@@ -83,6 +83,7 @@ p {
 .header__logo {
     font-size: 30px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 /* NAVIGATION */
