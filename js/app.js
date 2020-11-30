@@ -50,4 +50,23 @@ $(function() {
         $("#nav_toggle").toggleClass("active");
     });
 
+    // ACORDION
+
+    $("[data-collapse]").on("click", function(event) {
+        event.preventDefault();
+        let blockId = $(this).data("collapse");
+        $(this).toggleClass("active");
+        // $(blockId).slideToggle();
+
+    });
+
+    // SLIDER
+
+    $("[data-slider]").slick({
+        infinite: true,
+        fade: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
 });

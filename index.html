@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>MoGo</title>
 </head>
@@ -245,32 +246,32 @@
                 <div class="wedo__item">
 
                     <div class="acordion">
-                        <div class="acordion__item active">
+                        <div class="acordion__item active" data-collapse="#wedo1">
                             <div class="acordion__header">
                                 <img class="acordion__img" src="img/wedo/photo.png" alt="photo">
                                 <div class="acordion__title">Photography</div>
                             </div>
-                            <div class="acordion__content">
+                            <div class="acordion__content" id="wedo1">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
                         </div>
 
-                        <div class="acordion__item">
+                        <div class="acordion__item" data-collapse="#wedo2">
                             <div class="acordion__header">
                                 <img class="acordion__img" src="img/wedo/creativity.png" alt="photo">
                                 <div class="acordion__title">Creativity</div>
                             </div>
-                            <div class="acordion__content">
+                            <div class="acordion__content" id="wedo2">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
                         </div>
 
-                        <div class="acordion__item">
+                        <div class="acordion__item" data-collapse="#wedo3">
                             <div class="acordion__header">
                                 <img class="acordion__img" src="img/wedo/web.png" alt="photo">
                                 <div class="acordion__title">web design</div>
                             </div>
-                            <div class="acordion__content">
+                            <div class="acordion__content" id="wedo3">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
                         </div>
@@ -289,13 +290,22 @@
         <div class="container">
             <div class="reviews__iner">
 
-                <a class="reviews__btn reviews__btn--prev" href="#"></a>
-                <a class="reviews__btn reviews__btn--next" href="#"></a>
+                <div data-slider>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__img" src="img/reviews/SPEECH.png" alt="speech">
+                            <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                            <div class="reviews__author">Jon Doe</div>
+                        </div>
+                    </div>
 
-                <div class="reviews__item">
-                    <img class="reviews__img" src="img/reviews/SPEECH.png" alt="speech">
-                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                    <div class="reviews__author">Jon Doe</div>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__img" src="img/reviews/SPEECH.png" alt="speech">
+                            <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                            <div class="reviews__author">Jon Doe</div>
+                        </div>
+                    </div>
                 </div>
             </div><!-- REVIEWS__INER -->
         </div><!-- \.CONTAINER -->
@@ -531,13 +541,22 @@
         <div class="container">
             <div class="reviews__iner">
 
-                <a class="reviews__btn reviews__btn--prev" href="#"></a>
-                <a class="reviews__btn reviews__btn--next" href="#"></a>
+                <div data-slider>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__img" src="img/testimonial/1.png" alt="speech">
+                            <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                            <div class="reviews__author">Joshua Earle</div>
+                        </div>
+                    </div>
 
-                <div class="reviews__item">
-                    <img class="reviews__img" src="img/testimonial/1.png" alt="speech">
-                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                    <div class="reviews__author">Joshua Earle</div>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__img" src="img/testimonial/1.png" alt="speech">
+                            <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                            <div class="reviews__author">Joshua Earle</div>
+                        </div>
+                    </div>
                 </div>
             </div><!-- REVIEWS__INER -->
         </div><!-- \.CONTAINER -->
@@ -846,7 +865,7 @@
 <!-- JS -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/app.js"></script>
     
 </body>
