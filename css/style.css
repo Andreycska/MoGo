@@ -91,6 +91,10 @@ p {
     display: flex;
 }
 
+.nav.active {
+    display: flex;
+}
+
 .nav__link {
     margin-left: 30px;
 
@@ -105,10 +109,6 @@ p {
     text-decoration: none;
 
     transition: color .2s linear;
-}
-
-.nav__link.active {
-    color: #fce38a;
 }
 
 .nav__link::after {
@@ -134,9 +134,14 @@ p {
     color: #fce38a;
 }
 
-.nav__link:hover::after {
+.nav__link:hover::after,
+.nav__link.active:after {
     opacity: 1;    
     padding-bottom: 0;
+}
+
+.nav__link.active {
+    color: #fce38a;
 }
 
 /* NAV-TOGGLE */
@@ -206,6 +211,10 @@ p {
 .nav-toggle.active .nav-toggle__item::after {
     transform-origin: left bottom;
     transform: rotate(-45deg) translate3d(0, 3px, 0);
+}
+
+.nav-toggle:focus {
+    outline: 0;
 }
 
 /* INTRO */

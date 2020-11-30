@@ -30,11 +30,24 @@ $(function() {
         let blockId = $(this).data("scroll");
         let blockOffset = $(blockId).offset().top;
 
+        $("#nav").toggleClass("active");
+        $("#header").toggleClass("active");
+        $("#nav_toggle").toggleClass("active");
+
         $("#nav a").removeClass("active");
         $(this).addClass("active");
         $("html, body").animate({
             scrollTop: blockOffset
         }, 500)
+    });
+
+    // MENU NAV TOOGLE
+
+    $("#nav_toggle").on("click", function(event) {
+        event.preventDefault();
+        $("nav").toggleClass("active");
+        $("#header").toggleClass("active");
+        $("#nav_toggle").toggleClass("active");
     });
 
 });
