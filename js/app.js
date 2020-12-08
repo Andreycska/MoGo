@@ -41,6 +41,16 @@ $(function() {
         }, 500)
     });
 
+    $("[data-home]").on("click", function(event) {
+        event.preventDefault();
+        let blockId = $(this).data("home");
+        let blockOffset = $(blockId).offset().top;
+
+        $("html, body").animate({
+            scrollTop: blockOffset
+        }, 500)
+    });
+
     // MENU NAV TOOGLE
 
     $("#nav_toggle").on("click", function(event) {
